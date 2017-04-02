@@ -59,5 +59,10 @@ public class MovementPlayer : MonoBehaviour {
 		state = !state;
 	}
 
+	void FixedUpdate(){
+		Vector3 forwardForce = new Vector3 (0, 0, 10f);
+		rb.AddForce (forwardForce);
+	}
+
 
 }
